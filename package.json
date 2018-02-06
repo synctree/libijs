@@ -8,9 +8,9 @@
   },
   "author": "mceSystems",
   "license": "MIT",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/mceSystems/libijs"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mceSystems/libijs"
   },
   "dependencies": {
     "bytes": "^3.0.0",

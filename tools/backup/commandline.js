@@ -59,7 +59,8 @@ const args = require("yargs")
 		.help();
 	})
 	.option("usbmuxd", {
-		hidden: true,
+    required: false,
+    hidden: true,
 	})
 	.coerce("usbmuxd", (usbmuxd) => {
 		const keysCount = Object.keys(usbmuxd).length;
@@ -92,17 +93,13 @@ const args = require("yargs")
 	})
 	.option("udid", {
 		description: "target specific device by its 40-digit device UDID",
-		required: false,
 		alias: "u",
 		type: "string",
-		requiresArg: true,
 	})
 	.option("source", {
 		description: "use backup data from device specified by UDID",
-		required: false,
 		alias: "s",
 		type: "string",
-		requiresArg: true,
 	})
 	.option("interctive", {
 		description: "request passwords interactively",
